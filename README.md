@@ -2,7 +2,7 @@
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -18,7 +18,7 @@ The objective of this lab was to simulate a Security Operations Center (SOC) wor
 
 
 
-\## Lab Architecture
+## Lab Architecture
 
 
 
@@ -76,7 +76,7 @@ Email Notification
 
 
 
-\## Technologies Used
+## Technologies Used
 
 
 
@@ -102,11 +102,11 @@ Email Notification
 
 
 
-\## Project Workflow
+## Project Workflow
 
 
 
-\### 1. Deploy Infrastructure
+### 1. Deploy Infrastructure
 
 
 
@@ -120,7 +120,7 @@ Email Notification
 
 
 
-\### 2. Configure Data Collection
+### 2. Configure Data Collection
 
 
 
@@ -132,7 +132,7 @@ Email Notification
 
 
 
-\### 3. Threat Detection
+### 3. Threat Detection
 
 
 
@@ -152,7 +152,7 @@ Created several KQL queries to investigate authentication events including:
 
 
 
-\### 4. Analytics Rule
+### 4. Analytics Rule
 
 
 
@@ -178,7 +178,7 @@ Detection:
 
 
 
-\### 5. Incident Investigation
+### 5. Incident Investigation
 
 
 
@@ -198,7 +198,7 @@ Verified:
 
 
 
-\### 6. SOAR Automation
+### 6. SOAR Automation
 
 
 
@@ -220,7 +220,7 @@ Successfully validated:
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
@@ -262,11 +262,11 @@ Microsoft-Sentinel-SOC-Lab
 
 
 
-\## KQL Queries Included
+## KQL Queries Included
 
 
 
-\### Security Events
+### Security Events
 
 
 
@@ -274,7 +274,7 @@ Displays recent Windows Security Events.
 
 
 
-\### Failed Login Events
+### Failed Login Events
 
 
 
@@ -282,7 +282,7 @@ Displays Windows failed logon events using Event ID 4625.
 
 
 
-\### Failed Login Summary
+### Failed Login Summary
 
 
 
@@ -290,7 +290,7 @@ Summarizes failed login attempts by account and computer.
 
 
 
-\### Multiple Failed Login Detection
+### Multiple Failed Login Detection
 
 
 
@@ -298,7 +298,7 @@ Detects five or more failed login attempts within five minutes.
 
 
 
-\### Failed Login Trend
+### Failed Login Trend
 
 
 
@@ -310,7 +310,7 @@ Visualizes failed login activity over time.
 
 
 
-\## Skills Demonstrated
+## Skills Demonstrated
 
 
 
