@@ -1,0 +1,5 @@
+SecurityEvent
+| where EventID == 4625
+| summarize FailedLogins = count() by bin(TimeGenerated, 5m)
+| order by TimeGenerated asc
+| render timechart
