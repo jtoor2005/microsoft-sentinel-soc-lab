@@ -1,4 +1,4 @@
-\# Microsoft Sentinel SIEM/SOAR Lab
+# Microsoft Sentinel SIEM/SOAR Lab
 
 
 
