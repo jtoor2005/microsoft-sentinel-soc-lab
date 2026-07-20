@@ -426,6 +426,55 @@ Possible future enhancements include:
 
 \- Custom hunting queries
 
+# Results
+
+## Failed Login Events
+
+The following KQL query retrieves Windows failed logon events (Event ID 4625) collected by Microsoft Sentinel from the monitored virtual machine.
+
+![Failed Login Events](images/failed-login-events.png)
+
+The query results confirm that failed authentication attempts are successfully being ingested into the Log Analytics workspace.
+
+---
+
+## Failed Login Trend
+
+A time-based visualization was created to identify spikes in failed authentication attempts and potential brute-force activity.
+
+![Failed Login Trend](images/failed-login-trend.png)
+
+---
+
+## Incident Creation
+
+A scheduled analytics rule was configured to detect multiple failed login attempts within a five-minute period. Once the rule conditions were met, Microsoft Sentinel automatically generated a security incident.
+
+![Incident Creation](images/incident-list.png)
+
+---
+
+## Incident Investigation
+
+The generated incident was investigated using the Microsoft Defender incident view, providing alert details and investigation context for the detected activity.
+
+![Incident Investigation](images/incident-alert-details.png)
+
+---
+
+## SOAR Automation
+
+A Microsoft Sentinel playbook was created using Azure Logic Apps. The playbook is triggered automatically when a Sentinel incident is created and executes an automated email notification workflow.
+
+![SOAR Automation](images/logic-app-designer.png)
+
+---
+
+## Automated Email Notification
+
+When the playbook executes successfully, an email notification is automatically sent containing information about the newly created Microsoft Sentinel incident.
+
+![Automated Email Notification](images/email-notification.png)
 
 
 \---
