@@ -432,9 +432,11 @@ Possible future enhancements include:
 
 The following KQL query retrieves Windows failed logon events (Event ID 4625) collected by Microsoft Sentinel from the monitored virtual machine.
 
-![Failed Login Events](images/failed-login-events.png)
+![Failed Login Events](images/failed-login-events.PNG)
 
 The query results confirm that failed authentication attempts are successfully being ingested into the Log Analytics workspace.
+
+![Failed Login Query Results](images/failed-login-query-results.PNG)
 
 ---
 
@@ -442,7 +444,7 @@ The query results confirm that failed authentication attempts are successfully b
 
 A time-based visualization was created to identify spikes in failed authentication attempts and potential brute-force activity.
 
-![Failed Login Trend](images/failed-login-trend.png)
+![Failed Login Trend](images/failed-login-trend.PNG)
 
 ---
 
@@ -450,7 +452,7 @@ A time-based visualization was created to identify spikes in failed authenticati
 
 A scheduled analytics rule was configured to detect multiple failed login attempts within a five-minute period. Once the rule conditions were met, Microsoft Sentinel automatically generated a security incident.
 
-![Incident Creation](images/incident-list.png)
+![Incident Creation](images/incident-list.PNG)
 
 ---
 
@@ -458,7 +460,7 @@ A scheduled analytics rule was configured to detect multiple failed login attemp
 
 The generated incident was investigated using the Microsoft Defender incident view, providing alert details and investigation context for the detected activity.
 
-![Incident Investigation](images/incident-alert-details.png)
+![Incident Investigation](images/incident-alert-details.PNG)
 
 ---
 
@@ -466,7 +468,7 @@ The generated incident was investigated using the Microsoft Defender incident vi
 
 A Microsoft Sentinel playbook was created using Azure Logic Apps. The playbook is triggered automatically when a Sentinel incident is created and executes an automated email notification workflow.
 
-![SOAR Automation](images/logic-app-designer.png)
+![SOAR Automation](images/logic-app-designer.PNG)
 
 ---
 
@@ -474,11 +476,7 @@ A Microsoft Sentinel playbook was created using Azure Logic Apps. The playbook i
 
 When the playbook executes successfully, an email notification is automatically sent containing information about the newly created Microsoft Sentinel incident.
 
-![Automated Email Notification](images/email-notification.png)
-
-
-\---
-
+![Automated Email Notification](images/email-notification.PNG)
 
 
 \## Author
